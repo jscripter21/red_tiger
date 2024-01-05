@@ -1,0 +1,152 @@
+@import 'vars';
+@import 'global';
+body {
+    height: auto;
+}
+
+.wrapper {
+    background-image: url(../img/bg/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.header_logo {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo_container {
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 255px;
+}
+
+.tiger {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.red_tiger {
+    width: 100%;
+    transform: translateZ(0);
+    transition: transform 0.3s ease-out;
+    z-index: 2;
+}
+
+.bufer-box {
+    display: flex;
+    color: #FF9C28;
+    font-family: Montserrat;
+    font-size: 24.475px;
+    font-weight: 700;
+    line-height: 21.651px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 28%;
+    transform: translate(-55%, -50%);
+    align-items: center;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn_img_snow {
+    display: flex;
+    justify-content: center;
+}
+
+.btn_img_snow a {
+    animation: pulse 2s infinite;
+    position: absolute;
+    top: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.footer__icons {
+    max-width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer__icons-item {
+    width: 150px;
+    margin-bottom: 6px;
+}
+
+.footer_copyright {
+    color: #FFF;
+    max-width: 780px;
+    margin-top: 15px;
+    font-family: Montserrat;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+.falling-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.leaf-scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform-style: preserve-3d;
+    div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: url(http://www.clker.com/cliparts/u/m/q/p/x/l/sakura-petal-3-pink-hi.png) no-repeat;
+        background-size: 100%;
+        transform-style: preserve-3d;
+        backface-visibility: visible;
+    }
+}
+
+@import 'media';
